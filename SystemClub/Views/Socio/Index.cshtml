@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="~/css/materialize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+
+
+</head>
+<body id="blog">
+    <section class="blogpost" >
+        <section class="blogpost-content" style="width:80%">
+            <div class="container-fluid">
+                <form id="cadsocio" class="col s12">
+                    <div class="row">
+
+
+
+                        <div class="input-field col s12 m8">
+                            <input id="nome" type="text">
+                            <label for="nome">Nome</label>
+                        </div>
+
+                        <div class="col s12 m2">
+                            <label>Sexo</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
+                            </select>
+                        </div>
+
+                        <div class="col s12 m2">
+                            <label>Categoria</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="1">Familiar</option>
+                                <option value="2">Pessoal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m2">
+                            <input id="cpf" type="text">
+                            <label for="cpf">CPF</label>
+                        </div>
+
+                        <div class="input-field col s12 m2">
+                            <input id="rg" type="text">
+                            <label for="rg">RG</label>
+                        </div>
+                        <div class="col s12 m2">
+                            <label for="birthdate" class="">Nascimento</label>
+                            <input type="text" class="datepicker">
+                        </div>
+                        <div class="input-field col s12 m3">
+                            <input id="certidao" type="text">
+                            <label for="certidao">Certidão de casamento</label>
+                        </div>
+
+                        <div class="input-field col s12 m3">
+                            <input id="profissao" type="text">
+                            <label for="profissao">Profissão</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <label>Estado Civil</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="1">Solteiro(a)</option>
+                                <option value="2">Casado(a)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12 m3">
+                            <input id="convenio" type="text">
+                            <label for="convenio">Convênio</label>
+                        </div>
+
+                        <div class="input-field col s12 m3">
+                            <input id="mensalidade" type="text">
+                            <label for="mensalidade">Mensalidade (R$)</label>
+                        </div>
+
+                        <div class="input-field col s12 m3">
+                            <input id="vencimento" type="text">
+                            <label for="vencimento">Vencimento (Dia)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m3">
+                            <input id="fone1" type="text">
+                            <label for="fone1">Telefone 1</label>
+                        </div>
+                        <div class="input-field col s12 m3">
+                            <input id="fone2" type="text">
+                            <label for="fone2">Telefone 2</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="email" type="text">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <input id="nomepai" type="text">
+                            <label for="nomepai">Nome do pai</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="nomemae" type="text">
+                            <label for="nomemae">Nome do mãe</label>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="input-field col s12 m4">
+                            <label for="dtcompra" class="">Data de compra</label>
+                            <input type="text" class="datepicker">
+                        </div>
+                        <div class="input-field col s12 m8">
+                            <input id="docfalta" type="text">
+                            <label for="docfalta">Documento falta</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+                            <label for="textarea1">Informações</label>
+                        </div>
+                    </div>
+
+
+                    <br />
+
+                    <div class="row">
+                        <div class="fixed-action-btn toolbar" style="position:absolute">
+                            <a class="btn-floating btn-large red">
+                                <i class="large material-icons">add</i>
+                            </a>
+                            <ul>
+                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">save</i></a></li>
+                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">email</i></a></li>
+                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </form>
+
+                <form id="cadsocioendereco" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12 m2">
+                            <input id="cep" type="text">
+                            <label for="cep">CEP</label>
+                        </div>
+                        <div class="input-field col s12 m8">
+                            <input id="logradouro" type="text">
+                            <label for="logradouro">Logradouro</label>
+                        </div>
+                        <div class="input-field col s12 m2">
+                            <input id="numero" type="text">
+                            <label for="numero">Número</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m4">
+                            <input id="bairro" type="text">
+                            <label for="bairro">Bairro</label>
+                        </div>
+                        
+                        <div class="col s12 m2">
+                            <label>UF</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="1">SP</option>
+                                <option value="2">RJ</option>
+                            </select>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <label>Cidade</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="1">São Paulo</option>
+                                <option value="2">Barretos</option>
+                            </select>
+                        </div>
+
+                        <div class="col s12 m3">
+                            <label>País</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="1">Brasil</option>
+                                <option value="2">Argentina</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+    </section>
+
+        <section class="blogpost-details" style="width:20%">
+            <div class="mlightbox-description">
+                <br />
+                <img style="width:150px;align-content:center;margin-left:20%" src="~/img/profile2.jpg" />
+
+                <div class="fixed-action-btn" style="right: 10px;position:absolute;padding:1%">
+                    <a class="btn-floating btn-large red" style="margin-left:100%">
+                        <i class="material-icons">mode_edit</i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;margin-left:100%"><i class="material-icons">delete</i></a></li>
+                       <li><a class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;margin-left:100%"><i class="material-icons">save</i></a></li>
+                   </ul>
+                </div>
+
+            </div>
+            <ul class="mlist">
+                <li><a style="padding:1%" href="#" onclick="openCadSocio()"><i class="fa fa-file"></i>Cadastro de sócios</a></li>
+                <li><a href="#" onclick="openEndereco()" >Endereço</a></li>
+                <li><a href="#">Dependente</a></li>
+                <li><a href="#">Agregado</a></li>
+            </ul>
+            <ul class="mlist mlistbottomright">
+                <li><a href="../" class="close-mlightbox"><img src="../img/backarrow.png" height="32" width="32" class="backarrow" /> <span class="text-medium">Voltar</span></a></li>
+            </ul>
+        </section>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <script src="../js/jquery.isotope.min.js"></script>
+    <script src="../js/jquery.mousewheel.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.js"></script>
+    <script src="../js/tileshow.js"></script>
+    <script src="../js/mlightbox.js"></script>
+    <script src="../js/jquery.fitVids.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/singlepost.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#cadsocioendereco").hide();
+
+            
+        });
+
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15, // Creates a dropdown of 15 years to control year,
+            today: 'Hoje',
+            clear: 'Limpar',
+            close: 'Confirmar',
+            closeOnSelect: true // Close upon selecting a date,
+        });
+
+        function openEndereco() {
+            $("#cadsocio").hide();
+            $("#cadsocioendereco").show();
+        }
+
+
+        function openCadSocio() {
+            $("#cadsocio").show();
+            $("#cadsocioendereco").hide();
+        }
+    
+       
+
+
+    </script>
+
+    
+</body>
+</html>

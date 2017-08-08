@@ -88,14 +88,19 @@
                             <label for="convenio">Convênio</label>
                         </div>
 
-                        <div class="input-field col s12 m3">
+                        <div class="input-field col s12 m2">
                             <input id="mensalidade" type="text">
                             <label for="mensalidade">Mensalidade (R$)</label>
                         </div>
 
-                        <div class="input-field col s12 m3">
+                        <div class="input-field col s12 m2">
                             <input id="vencimento" type="text">
                             <label for="vencimento">Vencimento (Dia)</label>
+                        </div>
+
+                        <div class="input-field col s12 m2">
+                            <label for="dtcompra" class="">Data de compra</label>
+                            <input type="text" class="datepicker">
                         </div>
                     </div>
                     <div class="row">
@@ -119,49 +124,42 @@
                         </div>
                         <div class="input-field col s12 m6">
                             <input id="nomemae" type="text">
-                            <label for="nomemae">Nome do mãe</label>
+                            <label for="nomemae">Nome da mãe</label>
                         </div>
                     </div>
 
 
-                    <div class="row">
-                        <div class="input-field col s12 m4">
-                            <label for="dtcompra" class="">Data de compra</label>
-                            <input type="text" class="datepicker">
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <textarea id="docfalta" class="materialize-textarea" data-length="120"></textarea>
+                                <label for="docfalta">Documento falta</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+                                <label for="textarea1">Informações</label>
+                            </div>
                         </div>
-                        <div class="input-field col s12 m8">
-                            <input id="docfalta" type="text">
-                            <label for="docfalta">Documento falta</label>
+
+
+                        <br />
+
+                        <div class="row">
+                            <div class="fixed-action-btn toolbar" style="position:absolute">
+                                <a class="btn-floating btn-large red">
+                                    <i class="large material-icons">add</i>
+                                </a>
+                                <ul>
+                                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">save</i></a></li>
+                                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">email</i></a></li>
+                                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+                                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
-                            <label for="textarea1">Informações</label>
-                        </div>
-                    </div>
-
-
-                    <br />
-
-                    <div class="row">
-                        <div class="fixed-action-btn toolbar" style="position:absolute">
-                            <a class="btn-floating btn-large red">
-                                <i class="large material-icons">add</i>
-                            </a>
-                            <ul>
-                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">save</i></a></li>
-                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">email</i></a></li>
-                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
-                                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
-                            </ul>
-                        </div>
-                    </div>
 
 
 
-                </form>
+</form>
 
                 <form id="cadsocioendereco" class="col s12">
                     <div class="row">

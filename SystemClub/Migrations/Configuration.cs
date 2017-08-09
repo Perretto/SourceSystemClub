@@ -5,14 +5,16 @@ namespace SystemClub.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<SystemClub.Migrations.Context>
+    internal sealed class Configuration : DbMigrationsConfiguration<SystemClub.Context.ContextSystem>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            //AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(SystemClub.Migrations.Context context)
+        protected override void Seed(SystemClub.Context.ContextSystem context)
         {
             //  This method will be called after migrating to the latest version.
 

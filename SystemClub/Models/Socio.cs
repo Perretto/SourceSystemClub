@@ -40,7 +40,7 @@ namespace SystemClub.Models
 
         [Column("DTNasc")]
         [Display(Name = "Data de nascimento do titular")]
-        public virtual DateTime DtNasc { get; set; }
+        public virtual DateTime? DtNasc { get; set; }
 
         [Column("CertCasamento")]
         [StringLength(70)]
@@ -71,7 +71,7 @@ namespace SystemClub.Models
 
         [Column("DataCompra")]
         [Display(Name = "Data da aquisicao do titulo")]
-        public virtual DateTime DataCompra { get; set; }
+        public virtual DateTime? DataCompra { get; set; }
 
         [Column("Telefone1")]
         [StringLength(20)]

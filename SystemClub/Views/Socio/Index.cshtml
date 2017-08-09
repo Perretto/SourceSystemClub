@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model SystemClub.Models.Socio
+
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -11,7 +13,8 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link href="~/css/materialize.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
-
+    <script src="~/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/dist/sweetalert.css">
 
 </head>
 <body id="blog">
@@ -24,7 +27,7 @@
 
 
                         <div class="input-field col s12 m8">
-                            <input id="nome" type="text">
+                            <input id="nome" type="text" value="@Model.NomeSocio">
                             <label for="nome">Nome</label>
                         </div>
 
@@ -149,9 +152,9 @@
                                     <i class="large material-icons">add</i>
                                 </a>
                                 <ul>
-                                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">save</i></a></li>
+                                    <li class="waves-effect waves-light"><a onclick="save()" href="#!"><i class="material-icons">save</i></a></li>
+                                    <li class="waves-effect waves-light"><a onclick="deletar()" href="#!"><i class="material-icons">delete</i></aonclick="save()"></li>
                                     <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">email</i></a></li>
-                                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
                                     <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
                                 </ul>
                             </div>
@@ -425,7 +428,7 @@
                     </a>
                     <ul>
                         <li><a class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;margin-left:100%"><i class="material-icons">delete</i></a></li>
-                       <li><a class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;margin-left:100%"><i class="material-icons">save</i></a></li>
+                       <li><a  class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;margin-left:100%"><i class="material-icons">save</i></a></li>
                    </ul>
                 </div>
 
@@ -455,6 +458,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/singlepost.js"></script>
     <script src="../js/script.js"></script>
+
     <script>
         $(document).ready(function () {
             $("#cadsocioendereco").hide();
@@ -501,6 +505,49 @@
             $("#cadsocio").hide();
             $("#cadsocioendereco").hide();
         }
+
+        function save() {
+            swal({
+                title: "Deseja salvar?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#057d14",
+                confirmButtonText: "Sim",
+                cancelButtonColor: "#DD6B55",
+                cancelButtonText: "Não",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+            function (isConfirm) {
+                if (isConfirm) {
+                    swal("Salvo", "Registro salvo com sucesso", "success");
+                } else {
+                    swal("Cancelado", "", "error");
+                }
+            });
+        }
+
+        function deletar() {
+            swal({
+                title: "Deseja deletar?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#057d14",
+                confirmButtonText: "Sim",
+                cancelButtonColor: "#DD6B55",
+                cancelButtonText: "Não",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+            function (isConfirm) {
+                if (isConfirm) {
+                    swal("Deletar", "Registro deletado com sucesso", "success");
+                } else {
+                    swal("Cancelado", "", "error");
+                }
+            });
+        }
+
 
     </script>
 
